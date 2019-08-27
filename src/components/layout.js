@@ -7,13 +7,18 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import {
+  useStaticQuery,
+  graphql
+} from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
+const Layout = ({
+  children
+}) => {
+  const data = useStaticQuery(graphql `
     query SiteTitleQuery {
       site {
         siteMetadata {
@@ -23,19 +28,17 @@ const Layout = ({ children }) => {
     }
   `)
 
-  return (
-    <>
-      <Header />
-      <main> {children}</main>
-      <footer>
-        Made with
-        <span alt="luck" aria-label="luck" role="img">
-          🍀
-        </span>
-        by
-        <a href="https://github.com/jhonsnake/">John Prada</a>
-      </footer>
-    </>
+  return ( <
+    >
+    <
+    Header / >
+    <
+    main > {
+      children
+    } < /main>
+
+    <
+    />
   )
 }
 
