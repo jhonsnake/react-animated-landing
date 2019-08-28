@@ -1,3 +1,6 @@
+require('dotenv').config()
+
+
 module.exports = {
   siteMetadata: {
     title: `Design to code`,
@@ -34,8 +37,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: 'f31ct8ynjk1h',
-        accessToken: 'SD9W8RZS4_vDFmSApOlhjd_VXkP1HuNUdGulrIG8-Yg'
+        spaceId: process.env.CONTENTFUL_SPACEID,
+        accessToken: process.env.CONTENTFUL_ACCESTOKEN
       }
     }
   ],
