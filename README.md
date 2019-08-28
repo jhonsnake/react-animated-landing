@@ -5,6 +5,9 @@
   </a>
 </p>
 
+sample netlify link:
+https://unruffled-euler-b8aeb5.netlify.com/
+
 <p><strong>Note:</strong> You need to add an Image to Media in your contentfull or it will have an error in contentfull package</p>
 
 <p>You need to configurate your own .env with contenful api</p>
