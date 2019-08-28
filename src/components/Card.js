@@ -1,14 +1,23 @@
-import React, { Component } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import "./Card.css"
 
 const Card = props => {
-  return (
-    <div className="Card">
-      <img src={props.image} alt="wallpaper" />
-      <h3>{props.title}</h3>
-      <p>{props.text}</p>
-    </div>
+  return ( <
+    div className = "Card" >
+    <
+    img src = {
+      props.image
+    }
+    alt = "wallpaper" / >
+    <
+    h3 > {
+      props.title
+    } < /h3> <
+    p > {
+      props.text
+    } < /p> <
+    /div>
   )
 }
 

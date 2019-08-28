@@ -7,6 +7,30 @@ import SEO from "../components/seo"
 import Card from "../components/Card"
 import Section from "../components/Section"
 import Wave from "../components/Wave"
+import staticdata from "../../staticdata.json"
+import Cell from "../components/Cell"
+import styled from "styled-components"
+
+const SectionCaption = styled.p`
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #94a4ba;
+  text-align: center;
+`
+const SectionCellGroup = styled.div`
+  max-width: 800px;
+  margin: 0 auto 100px;
+
+  grid-column-gap: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 20px;
+
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`
 
 const IndexPage = () => (
   <Layout>
@@ -62,6 +86,12 @@ const IndexPage = () => (
         text="Learn how to build a modern site using React and the most efficient libraries to get your site/product online. Get familiar with Grid CSS, animations, interactions, dynamic data with Contentful and deploying your site with Netlify."
       />
     </div>
+    <SectionCaption>12 Sections - 6 hours</SectionCaption>
+    <SectionCellGroup>
+      {staticdata.cells.map((cell, i) => {
+        return <Cell key={i} title={cell.title} image={cell.image} />
+      })}
+    </SectionCellGroup>
   </Layout>
 )
 

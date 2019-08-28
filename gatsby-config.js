@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Design to code`,
+    description: `Kick off your next, great code tutorial`,
+    author: `@jhonsnake`,
+    keywords: `react for designer, react course,`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -30,5 +31,12 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: 'f31ct8ynjk1h',
+        accessToken: 'SD9W8RZS4_vDFmSApOlhjd_VXkP1HuNUdGulrIG8-Yg'
+      }
+    }
   ],
 }
