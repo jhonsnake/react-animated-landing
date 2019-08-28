@@ -4,6 +4,10 @@
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
   </a>
 </p>
+
+<p><strong>Note:</strong> You need to add an Image to Media in your contentfull or it will have an error in contentfull package</p>
+
+<p>You need to configurate your own .env with contenful api</p>
 <h1 align="center">
   Gatsby's default starter
 </h1>
